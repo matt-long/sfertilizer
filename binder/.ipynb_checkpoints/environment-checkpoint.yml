@@ -1,0 +1,12 @@
+name: sfertilizer
+channels:
+    - conda-forge
+dependencies:
+    - cartopy
+    - jupyterlab
+    - matplotlib
+    - numpy
+    - pandas
+    - scipy
+    - seaborn
+    - xarray

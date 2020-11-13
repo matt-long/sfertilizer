@@ -1,0 +1,24 @@
+File Structure for Commercial Fertilizer ASCII data files for use by AAPFCO
+
+
+Commercial Fertilizers - ASCII Data Files 
+-------------------------------------------------------------------------------                                                                                                                                                                         
+                                    Implied    
+    Field            Type   Length  Decimals      Description/Example
+-------------------------------------------------------------------------------                                                                                                                                                                         
+Fertilizer Year     numeric     2             example:  85=July-June, 1985
+Extra County Data   character   1             "X"=extra county data, incomplete 
+State Abbreviation  character   2             example:  "AL"=Alabama
+County FIPS Code    numeric     3             for county names, see ASCIICTY.R              
+Reporting Period    numeric     2             6=Jul-Dec  12=Jan-Jun 
+Quantity (tons)     numeric     9      2      amount shipped in tons
+Fertilizer Code     numeric     3             for descriptions, see ASCIIFRT.R 
+Container           numeric     1             1=bag  2=bulk  3=liquid
+Use                 numeric     1             1=farm  2=nonfarm
+Grade:   N          numeric     3      1      % total nitrogen 
+         P2O5       numeric     3      1      % avail. phosphate
+         K2O        numeric     3      1      % soluble potash 
+-------------------------------------------------------------------------------                                                                                                                                                                         
+Notes: FIPS County Codes- available upon request and must be used
+       Fertilizer Codes- list available upon request
+

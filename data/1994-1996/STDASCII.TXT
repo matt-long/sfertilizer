@@ -1,0 +1,452 @@
+
+
+
+       
+       1985-1995 COMMERCIAL FERTILIZERS DATA - ASCII FILES BY REGION
+
+
+
+Commercial Fertilizers data for each fertilizer year has been divided into 
+eight regions and stored in ASCII files (.R extension).  The ASCII files 
+were zipped to self-extracting files (.EXE extension) and then copied to 
+two diskettes for each year.  The diskettes are labeled with the fertilizer 
+year and disk number.  Use Table 1 to locate the data file you need to 
+extract.  
+ 
+
+
+To extract a file, follow these steps:
+  
+1 - determine the name of file to extract and the disk number where the file
+     is stored using Table 1 (example: NWEMA95) 
+
+2 - insert the diskette into floppy drive (example: A)
+
+3 - from the hard drive prompt (example: C:\CFDATA>), type A:NWEMA95
+     then press ENTER 
+
+4 - the ASCII file NWEMA95.R will be copied to C:\CFDATA
+
+
+
+
+The following tables provide various information about the CF data:
+
+Table 1:  Disk Number, ASCII File Name and States By Region
+Table 2:  Number of Records Per File 
+Table 3:  County Data Availability
+Table 4:  ASCII File Layouts - CF Data Files, County Name File and Fertilizer
+          Code File
+Table 5:  Fertilizer Code Listing
+
+
+
+
+
+
+
+Table 1:  Disk Number, ASCII File Names and States By Region
+
+DISK 1 (Note:For 1995 only ENCEN95, ESCEN95 AND MTPAC95 are on Disk 1)
+
+ENCENyy - EAST NORTH CENTRAL
+  Illinios
+  Indiana
+  Michigan
+  Ohio
+  Wisconsin
+
+ESCENyy - EAST SOUTH CENTRAL
+  Alabama
+  Kentucky
+  Mississippi
+  Tennessee
+
+MTPACyy - MOUNTAIN, PACIFIC, OTHER, AND EXTRA COUNTY DATA 
+  Arizona       California      Alaska
+  Colorado      Oregon          Hawaii
+  Idaho         Washington      Puerto Rico
+  Montana                       
+  Nevada                        Extra county data states are 
+  New Mexico                     indicated in Table 3
+  Utah                                                
+  Wyoming 
+
+NWEMAyy - NEW ENGLAND AND MIDDLE ATLANTIC
+  Connecticut           Delaware                        
+  Maine                 Maryland
+  Massachusetts         New Jersey
+  New Hampshire         New York
+  Rhode Island          Pennsylania
+  Vermont               West Virginia
+
+
+
+DISK 2 (Note:For 1995 only NWEMA95, WNCEN95, AND WSCEN95 are on Disk 2)
+        
+SOATLyyA/SOATLyyB - SOUTH ATLANTIC (Note:For 1995 these files are on the
+  Georgia                           Instructions disk)
+  Florida
+  North Carolina
+  South Carolina
+  Virginia
+
+WNCENyy - WEST NORTH CENTRAL
+  Iowa
+  Kansas
+  Minnesota
+  Missouri
+  Nebraska
+  North Dakota
+  South Dakota
+        
+WSCENyy - WEST SOUTH CENTRAL
+  Arkansas
+  Louisiana
+  Oklahoma
+  Texas
+
+
+
+
+
+Table 2:  Number of Records Per File For Each Year 
+
+-------------------------------------------------------------------------------                                                                                                                                                                         
+yy  NWEMAyy  SOATLyyA SOATLyyB ENCENyy  WNCENyy  ESCENyy  WSCENyy  MTPACyy
+-------------------------------------------------------------------------------                                                                                                                                                                         
+85    6048    80000    58196    47505    25295    29103    22069    17759 
+
+86    8854    60000    53190    58532    30867    31761    44302    14781 
+
+87   25625    70000    50903    56298    28346    31147    45316    13521       
+
+88   32747    70000    51810    57119    29350    31195    47499    19086
+
+89   34748    70000    57202    55404    31495    35674    49720    19914
+
+90   35995    50000    43984    63559    34709    41932    54718    28057 
+
+91   34100    50000    49428    64719    34976    36848    55859    31264
+
+92   38074    80000    31305    65226    34201    43967    55900    16842
+
+93   43751    50000    48303    61165    34788    43269    56801    13800
+
+94   47121    50000    46847    46436    32962    39423    60810    11730
+
+95   52936    50000    45482    50222    32680    44661    57403    11935
+-------------------------------------------------------------------------------                                                                                                                                                                         
+NOTE:  To ensure validity of data, the number of records extracted from each 
+file should match this table.
+
+
+
+
+
+
+
+
+
+Table 3:  County Data Availability
+
+A=county data available    X=extra county data available, incomplete
+-------------------------------------------------------------------------------
+   State          85    86    87    88    89    90    91    92    93    94    95
+---------------------------------------------------------------------------------
+ALABAMA            A     A     A     A     A     A     A     A     A     A     A
+ALASKA             .     .     .     .     .     .     .     .     .     .     .
+ARIZONA            .     .     .     A     A     A     A     A     A     A     A
+ARKANSAS           .     A     A     A     A     A     A     A     A     A     A
+CALIFORNIA         .     A     A     A     A     A     A     A     A     A     A
+COLORADO           X     X     X     X     X     X     X     X     X     .     .
+CONNECTICUT        .     .     .     .     .     .     .     .     .     .     .
+DELAWARE           .     .     .     A     A     A     A     A     A     A     A
+FLORIDA            A     A     A     A     A     A     A     A     A     A     A
+GEORGIA            A     A     A     A     A     .     X     X     .     .     .
+HAWAII             .     .     .     .     .     .     .     .     .     .     .
+IDAHO              .     .     .     .     .     .     .     .     .     .     .
+ILLINOIS           A     A     A     A     A     A     A     A     A     A     A
+INDIANA            A     A     A     A     A     A     A     A     A     A     A
+IOWA               A     A     A     A     A     A     A     A     A     A     A
+KANSAS             X     X     X     X     X     A     A     A     A     A     A
+KENTUCKY           A     A     A     A     A     A     A     A     A     A     A
+LOUISIANA          A     A     A     A     A     X     X     A     A     A     A
+MAINE              .     .     .     A     A     A     A     A     A     A     A
+MARYLAND           .     .     A     A     A     A     A     A     A     A     A
+MASSACHUSETTS      .     .     .     .     .     .     .     .     .     .     .
+MICHIGAN           .     .     .     A     A     A     A     A     A     A     A
+MINNESOTA          .     .     .     A     A     A     A     A     A     A     A
+MISSISSIPPI        A     A     A     A     A     A     A     A     A     A     A
+MISSOURI           A     A     A     A     A     A     A     A     A     A     A
+MONTANA            .     .     .     .     .     .     .     .     .     .     .
+NEBRASKA           X     X     A     A     A     A     A     A     A     A     A
+NEVADA             .     .     .     .     .     .     .     .     .     .     .
+NEW HAMPSHIRE      .     .     .     .     .     .     .     .     .     .     .
+NEW JERSEY         .     .     .     .     .     .     .     .     .     .     .
+NEW MEXICO         A     X     A     A     A     A     A     A     A     A     A
+NEW YORK           .     .     .     .     .     A     .     A     A     A     A
+NORTH CAROLINA     A     A     A     A     A     A     A     A     A     A     A
+NORTH DAKOTA       .     .     .     .     X     A     A     .     .     A     A
+OHIO               A     A     A     A     A     A     A     A     A     A     A
+OKLAHOMA           X     A     A     A     A     A     A     A     A     A     A
+OREGON             .     .     .     .     .     .     .     .     .     .     .
+PENNSYLVANIA       .     .     A     A     A     A     A     A     A     A     A
+RHODE ISLAND       .     .     .     .     .     .     .     .     .     .     .
+SOUTH CAROLINA     A     A     A     A     A     A     A     A     A     A     A
+SOUTH DAKOTA       .     .     .     .     .     .     .     .     .     .     .
+TENNESSEE          A     A     A     A     A     A     A     A     A     A     A
+TEXAS              X     A     A     A     A     A     A     A     A     A     A
+UTAH               .     .     .     .     .     .     .     .     .     .     .
+VERMONT            .     .     .     .     A     A     A     A     A     A     A
+VIRGINIA           A     A     A     A     A     A     A     A     A     A     A
+WASHINGTON         .     .     .     .     .     .     .     .     A     A     A    
+WEST VIRGINIA      .     .     .     X     X     X     X     X     A     A     A    
+WISCONSIN          .     .     .     .     .     .     .     .     .     .     .    
+WYOMING            .     .     .     A     A     A     A     A     A     A     A   
+PUERTO RICO        .     .     .     .     .     .     .     .     .     .     .
+                                                                          
+  TOTALS          23    23    25    32    34    34    34    34    34    34    34    
+
+
+
+
+
+
+Table 4:  ASCII File Layouts - CF Data Files, County Name File and Fertilizer
+          Code File
+
+
+
+Commercial Fertilizers - ASCII Data Files 
+-------------------------------------------------------------------------------                                                                                                                                                                         
+                                    Implied    
+    Field            Type   Length  Decimals      Description/Example
+-------------------------------------------------------------------------------                                                                                                                                                                         
+Fertilizer Year     numeric     2             example:  85=July-June, 1985
+Extra County Data   character   1             "X"=extra county data, incomplete 
+State Abbreviation  character   2             example:  "AL"=Alabama
+County FIPS Code    numeric     3             for county names, see ASCIICTY.R              
+Reporting Period    numeric     2             6=Jul-Dec  12=Jan-Jun 
+Quantity (tons)     numeric     9      2      amount shipped in tons
+Fertilizer Code     numeric     3             for descriptions, see ASCIIFRT.R 
+Container           numeric     1             1=bag  2=bulk  3=liquid
+Use                 numeric     1             1=farm  2=nonfarm
+Grade:   N          numeric     3      1      % nitrogen per ton
+         P2O5       numeric     3      1      % phosphate per ton
+         K2O        numeric     3      1      % potash per ton
+-------------------------------------------------------------------------------                                                                                                                                                                         
+
+
+
+
+
+County Name File (ASCIICTY.R)
+-----------------------------------------                                                                                                                                                                               
+    Field            Type   Length       
+-----------------------------------------                                                                                                                                                                               
+State Abbreviation  character   2        
+County FIPS Code    numeric     3                      
+County Name         character  25        
+-----------------------------------------                                                                                                                                                                               
+
+
+
+
+
+Fertilizer Code File (ASCIIFRT.R)
+-----------------------------------------                                                                                                                                                                               
+    Field            Type   Length       
+-----------------------------------------                                                                                                                                                                               
+Fertilizer Code     numeric     3
+Fertilizer Name     character  40
+Short Name-Part 1   character   8
+Short Name-Part 2   character   8         
+-----------------------------------------                                                                                                                                                                               
+       
+
+
+
+
+
+
+Table 5:  Fertilizer Code Listing
+
+CODE________NAME____________N___P2O5___K2O___________RANGE_____________CONTAINER
+
+  0  IDENTIFIED BY GRADE  0.0   0.0   0.0                               DRY,LIQ
+  2  ANHY AMMONIA        82.0   0.0   0.0  80-83% N                     LIQ    
+  6  AQUA AMMONIA        20.5   0.0   0.0  10-30% N                     LIQ    
+ 10  AMMONIUM NITRATE    34.0   0.0   0.0  33-34% N                     DRY    
+ 12  AMM NIT SOLUTION    20.0   0.0   0.0  18-20% N                     LIQ    
+ 13  AMM NIT LIME MIX    20.5   0.0   0.0  17-26% N                     DRY    
+ 16  AMMONIUM NIT-SUL    30.0   0.0   0.0  26-30% N                     DRY    
+ 20  AMMONIUM POLYSULF   20.0   0.0   0.0  18-23% N                     LIQ    
+ 24  AMMONIUM SULFATE    21.0   0.0   0.0  20-21% N                     DRY    
+ 25  AMM SUL SOLUTION     6.0   0.0   0.0                               LIQ    
+ 27  AMMONIUM SUL-NIT    26.0   0.0   0.0                               DRY,LIQ
+ 29  AMMONIUM SUL-UREA   33.5   0.0   0.0  33-34% N                     DRY    
+ 31  AMMONIUM THIOSUL    12.0   0.0   0.0                               LIQ    
+ 35  CALCIUM AMM NIT     17.0   0.0   0.0  17-20.5% N                   DRY,LIQ
+ 38  CALCIUM CYANAM      20.5   0.0   0.0                               DRY,LIQ
+ 43  CALCIUM NITRATE     15.5   0.0   0.0  15-15.5% N                   DRY,LIQ
+ 46  CALCIUM NIT-UREA    33.8   0.0   0.0  30-35% N                     DRY    
+ 50  FERROUS AMM-SUL      7.0   0.0   0.0  14% FE, 16% S                DRY    
+ 52  MAGNE- SIUM NIT      7.1   0.0   0.0  6.6% MG                      LIQ    
+ 54  NITRIC ACID         15.0   0.0   0.0                               LIQ    
+ 56  NITROGEN SOL <28%    0.0   0.0   0.0  <28% N                       LIQ    
+ 58  NITROGEN SOL 28%    28.0   0.0   0.0  28-29.9% N                   LIQ    
+ 59  NITROGEN SOL 30%    30.0   0.0   0.0  30-31.9% N                   LIQ    
+ 60  NITROGEN SOL 32%    32.0   0.0   0.0  32-32.9% N                   LIQ    
+ 61  NITROGEN SOL >32%    0.0   0.0   0.0  >32% N                       LIQ    
+ 62  SODIUM NITRATE      16.0   0.0   0.0                               DRY    
+ 64  SUL CTD UREA        36.0   0.0   0.0  36-38%N                      DRY    
+ 66  UREA                46.0   0.0   0.0  45-46% N                     DRY    
+ 67  UREA SOLUTION       20.0   0.0   0.0                               LIQ    
+ 68  UREA- FORM          38.0   0.0   0.0  35-40% N                     DRY    
+ 73  ZINC AMM SUL SOL    10.0   0.0   0.0  10-15% N, 10% Z, 5% S        LIQ    
+ 77  ZINC MAN AMM SUL     9.0   0.0   0.0                               LIQ,DRY
+ 97  NITROGEN NO CODE     0.0   0.0   0.0  2-44% N                      DRY,LIQ
+ 98  NITROGEN NO ID       0.0   0.0   0.0  2-44% N                      DRY,LIQ
+201  AMMONIUM METAPHOS   12.0  51.0   0.0                               DRY    
+202  AMMONIUM PHOS       11.0  48.0   0.0                               DRY    
+203  DAP                 18.0  46.0   0.0  18-21% N, 46-54% P2O5        DRY    
+204  AMMONIUM POLY       15.0  60.0   0.0                               DRY,LIQ
+205  LIME PHOS            0.0   0.0   0.0  5-37% P2O5                   DRY    
+206  AMM PHOS NITRATE    27.0  14.0   0.0                               DRY    
+207  AMM PHOS SULFATE    16.0  20.0   0.0                               DRY,LIQ
+208  BASIC SLAG           0.0   9.0   0.0  8-10% P2O5                   DRY    
+209  MONOAMM PHOS        11.0  52.0   0.0                               DRY    
+212  BONE BLK SPENT       1.0  33.0   0.0                               DRY    
+214  RAW BONE MEAL        3.9  22.0   0.0                               DRY    
+216  STM BONE MEAL        2.2  27.0   0.0                               DRY    
+218  BONE PRECIP          0.0  35.0   0.0  28-45% P2O5                  DRY    
+223  CALCIUM METAPHOS     0.0  60.0   0.0  60-62% P2O5                  DRY    
+228  COLLOID PHOS         0.0   2.0   0.0  2-8% P2O5                    DRY    
+233  PHOS LIMESTNE        0.0  13.0   0.0  13-14% P2O5                  DRY    
+238  MAG PHOS             0.0  18.0   0.0  17-18% P2O5                  DRY    
+241  NITRIC PHOS          0.0   0.0   0.0  14-22% N, 10-22% P2O5        DRY    
+243  PHOS ROCK            0.0   3.0   0.0  2-4% P2O5                    DRY    
+248  PHOS ACID            0.0  54.0   0.0  2-75% P2O5                   LIQ    
+249  LIQ AMM POLY        10.0  34.0   0.0  5-12% N, 17-37% P2O5         LIQ
+
+
+
+
+
+Table 6:  Fertilizer Code Listing - continued
+
+CODE________NAME____________N___P2O5___K2O___________RANGE_____________CONTAINER
+
+253  PRECIP PHOS          0.0  35.0   0.0  24-45% P2O5                  DRY    
+263  NORMAL SUPER         0.0  22.0   0.0  18-22% P2O5                  DRY    
+265  ENRICHED SUPER       0.0  23.0   0.0  23-39% P2O5                  DRY    
+267  TRIPLE SUPER         0.0  46.0   0.0  40-54% P2O5                  DRY    
+273  SUPER PHOS ACD       0.0  68.0   0.0  68-75% P2O5                  LIQ    
+297  PHOS NO CODE         0.0   0.0   0.0  1-75% P2O5                   DRY,LIQ
+298  PHOS NO ID           0.0   0.0   0.0  1-75% P2O5                   DRY,LIQ
+408  LIME-POT MIXTURES    0.0   0.0  10.0  5-10% K2O                    DRY    
+413  MANURE SALTS         0.0   0.0  20.0  20-30% K2O                   DRY    
+415  POTASH SUSP          0.0   0.0   0.0                               LIQ    
+423  POT CARBON           0.0   0.0  64.0  52-69% K2O                   DRY,LIQ
+428  MUR OF POT 60%       0.0   0.0  60.0  59-61% K2O                   DRY    
+430  MUR OF POT 62%       0.0   0.0  62.0                               DRY    
+443  POT-MAG SULFATE      0.0   0.0  22.0  21-28% K2O                   DRY    
+448  POT METAPHOS         0.0  55.0  37.0                               DRY    
+453  POT NITRATE         14.0   0.0  44.0  12-14% N, 44-46% K2O         DRY    
+458  POT-SOD NITRATE     15.0   0.0  14.0                               DRY,LIQ
+463  POT SULFATE          0.0   0.0  50.0  48-52% K2O                   DRY    
+478  TOBACCO STEMS        2.0   0.0   6.0                               DRY    
+497  POTASH NO CODE       0.0   0.0   0.0  0-47% K2O                    DRY,LIQ
+498  POTASH NO ID         0.0   0.0   0.0  0-47% K2O                    DRY,LIQ
+601  DRIED BLOOD         12.0   0.0   0.0                               DRY    
+604  CASTOR POMACE        5.0   1.0   1.0                               DRY    
+607  COCOA SH MEAL        2.5   1.0   2.0                               DRY    
+610  COCOA TANKAGE        4.0   1.5   2.0                               DRY    
+613  COMPOST              2.0   2.0   1.0                               DRY    
+615  COT SEED MEAL        6.4   2.0   1.0                               DRY    
+617  FISH SCRAP           6.0   6.0   6.0                               DRY    
+629  GUANO               12.0  11.0   2.0                               DRY    
+649  MANURE               0.5   0.5   0.5                               DRY    
+652  PEAT                 1.9   0.2   0.2                               DRY    
+661  ACT SEW SLUDGE       6.0   2.0   2.0                               DRY,LIQ
+663  DIG SEW SLUDGE      10.0   2.0   0.0                               DRY    
+665  HT DRIED SEW SLGE    6.0   2.0   2.0  3-7% N, 1-7% P2O5, 1-2% K2O  DRY    
+667  OTH SEW SLUDGE       6.0   2.0   1.0                               DRY,LIQ
+671  SOYBEAN MEAL         6.0   1.0   2.0                               DRY    
+673  ANIMAL TANKAGE       8.1   5.3   5.9                               DRY    
+675  PROCESS TANKAGE      7.8   0.0   0.0                               DRY    
+681  LINSEED MEAL         5.6   2.0   1.0                               DRY    
+685  TUNG PUMACE          8.0   2.0   2.0                               DRY    
+697  NAT ORG NO CODE      0.0   0.0   0.0                               DRY    
+698  NAT ORG NO ID        0.0   0.0   0.0                               DRY    
+702  ALUMINUM SULFATE     0.0   0.0   0.0                               DRY    
+706  BORAX                0.0   0.0   0.0                               DRY    
+710  BRUCITE              0.0   0.0   0.0                               DRY    
+714  COBALT SULFATE       0.0   0.0   0.0                               DRY    
+716  BLK COP OXIDE        0.0   0.0   0.0                               DRY    
+717  RED COP OXIDE        0.0   0.0   0.0                               DRY    
+720  COPPER SULFATE       0.0   0.0   0.0                               DRY,LIQ
+722  COPPER CHELATE       0.0   0.0   0.0                               LIQ,DRY
+723  COPPER COMPOUND      0.0   0.0   0.0                               LIQ,DRY
+724  FERRIC OXIDE         0.0   0.0   0.0                               DRY    
+726  FERRIC SULFATE       0.0   0.0   0.0                               DRY    
+728  FERROUS SULFATE      0.0   0.0   0.0                               DRY    
+730  IRON CHELATE         0.0   0.0   0.0                               DRY,LIQ
+
+
+
+
+
+Table 6:  Fertilizer Code Listing - continued
+
+CODE________NAME____________N___P2O5___K2O___________RANGE_____________CONTAINER
+
+731  IRON COMPOUND        0.0   0.0   0.0                               DRY,LIQ
+732  GYPSUM               0.0   0.0   0.0                               DRY    
+733  CALCIUM CHELATE      0.0   0.0   0.0                               DRY,LIQ
+734  CALCIUM SUL (HY)     0.0   0.0   0.0                               LIQ,DRY
+736  LIME SUL SOLUTION    0.0   0.0   0.0                               LIQ    
+742  MAGNESIA             0.0   0.0   0.0                               DRY    
+744  EPSOM SALT           0.0   0.0   0.0                               DRY    
+745  MAG CHELATE          0.0   0.0   0.0                               DRY,LIQ
+748  MANGAN AGSTONE       0.0   0.0   0.0                               DRY    
+749  MANGAN CHELATE       0.0   0.0   0.0                               DRY,LIQ
+750  MANGAN OXIDE         0.0   0.0   0.0                               DRY    
+752  MANGAN SLAG          0.0   0.0   0.0                               DRY    
+754  MANGAN SULFATE       0.0   0.0   0.0                               DRY    
+758  MANGAN OXIDE         0.0   0.0   0.0                               DRY    
+762  MOLY                 0.0   0.0   0.0                               DRY    
+764  SOIL AMENDMNT        0.0   0.0   0.0                               DRY,LIQ
+765  SOIL ADDITIVE        0.0   0.0   0.0                               DRY,LIQ
+766  SOIL COND            0.0   0.0   0.0                               DRY,LIQ
+767  POTTING SOIL         0.0   0.0   0.0                               DRY    
+770  SULFUR               0.0   0.0   0.0                               DRY,LIQ
+773  CALCIUM CHLORIDE     0.0   0.0   0.0                               DRY,LIQ
+774  SULFURIC ACID        0.0   0.0   0.0                               LIQ    
+778  ZINC OXIDE           0.0   0.0   0.0                               DRY    
+780  ZINC OXY SULFATE     0.0   0.0   0.0                               DRY    
+782  ZINC SULFATE         0.0   0.0   0.0                               DRY    
+783  ZINC SUL SOLUTION    0.0   0.0   0.0                               LIQ    
+784  ZINC CHELATE         0.0   0.0   0.0                               DRY,LIQ
+797  SEC/MIC NO CODE      0.0   0.0   0.0                               DRY,LIQ
+798  SEC/MIC NO ID        0.0   0.0   0.0                               DRY,LIQ
+901  CALCIUM OXIDE        0.0   0.0   0.0                               DRY    
+902  CALCIUM HYDROX       0.0   0.0   0.0                               DRY    
+903  DOLOMITE             0.0   0.0   0.0                               DRY    
+904  DOLOMITE 75% NEUT    0.0   0.0   0.0                               DRY,LIQ
+905  STD CALCITE          0.0   0.0   0.0                               DRY    
+906  CALCITIC 75% NEUT    0.0   0.0   0.0                               DRY,LIQ
+907  LIME NO CODE         0.0   0.0   0.0                               DRY    
+908  LIME NO GRADE        0.0   0.0   0.0                               DRY,LIQ
+910  DOL/CAL BLEND        0.0   0.0   0.0                               DRY    
+912  LIME SUSP            0.0   0.0   0.0                               LIQ    
+915  NON-LIME FILLER      0.0   0.0   0.0                               DRY,LIQ
+978  FERT NO ID           0.0   0.0   0.0                               DRY,LIQ
+988  SGLE-NUT NO ID       0.0   0.0   0.0                               DRY,LIQ
+990  SPCIALTY NO GRADE    0.0   0.0   0.0                               DRY,LIQ
+998  MULT-NUT NO GRADE    0.0   0.0   0.0                               DRY,LIQ
+
+
+
+
